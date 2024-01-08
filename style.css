@@ -1,13 +1,16 @@
 table {
+    margin: 5rem 5rem;
+    height: 50rem;
+    width: 60rem;
     background-color: blue;
-    padding: 2px;
+    padding: 4px;
     z-index: 2;
 }
 
 td {
     background-color: white;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     z-index: 2;
 }
@@ -37,4 +40,34 @@ td {
     to {
         bottom: 0;
     }
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    z-index: 3;
+}
+
+.popup-content {
+    color: white;
+    position: relative;
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content button {
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
